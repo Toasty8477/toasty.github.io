@@ -21,11 +21,18 @@ html {
     font-family: "Fira Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    /* color: var(--text); */
 }
 
 h1, h3 {
     margin-top: 0px;
+}
+
+a:link {
+    color: aqua;
+}
+
+a:visited {
+    color: aqua;
 }
 
 #site-layout {

@@ -23,3 +23,64 @@ html {
     font-style: normal;
     /* color: var(--text); */
 }
+
+h1, h3 {
+    margin-top: 0px;
+}
+
+#site-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 85%;
+    margin: auto;
+    margin-top: 3em;
+}
+
+#left-side {
+    color: black;
+    padding-left: 2em;
+    position: sticky;
+    top: 0;
+}
+
+#right-side {
+    color: black;
+}
+
+.list-of-things {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    margin: 0.5em;
+}
+
+.project > img {
+    width: 90%;
+    grid-row: 1 / span 2;
+}
+
+.chip-container {
+    grid-column-start: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background-color: aqua;
+    padding: 0.25em 0.5em;
+    border-radius: 1em;
+    font-size: 0.8em;
+    height: min-content;
+    margin: 0.25rem;
+    margin-top: 0px;
+}
+
+.navigation-link {
+    color: black;
+    text-decoration: none;
+}

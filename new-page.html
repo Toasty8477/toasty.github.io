@@ -42,8 +42,9 @@
                     <a href="https://concinnitycon.weebly.com/">Concinnity</a>.</p></p>
                 </div>
 
-                <h1>My Projects</h1>
-                <div id="projects" class="list-of-things">
+                <h1 id="projects">My Projects</h1>
+                <div class="list-of-things">
+                    <!-- Wear OS Project -->
                     <div class="project">
                         <img src="images/whm-screenshot.png">
                         <div class="body">
@@ -61,9 +62,79 @@
                             <span class="chip">Jetpack Compose</span>
                         </div>
                     </div>
+                    <!-- ESPHome Plant Monitor -->
+                    <div class="project">
+                        <img src="images/esphome.png">
+                        <div class="body">
+                            <h3>ESPHome Plant Monitor</h3>
+                            <p>An ESPHome based plant monitor. Monitors soil moisture with a capacitive soil sensor
+                                for each plant and monitors ambient light, temperature, and humidity on the main device.
+                                All soil sensors are routed back to one central device to save on cost. The device can
+                                also talk with Home Assistant to send you notifications when your plant is low on water.
+                            </p>
+                        </div>
+                        <div class="chip-container">
+                            <span class="chip">ESPHome</span>
+                            <span class="chip">Home Assistant</span>
+                            <span class="chip">Hardware</span>
+                        </div>
+                    </div>
+                    <!-- Box Office -->
+                    <div class="project">
+                        <img src="images/box-office.svg">
+                        <div class="body">
+                            <h3>Box Office</h3>
+                            <p>A website to suggest and vote on movies. This project is very work in progress as I have
+                                been focused mostly on school. Uses a frontend written in React to call an Express API
+                                backend that manages votes and rating. The backend interacts with a MongoDB database to
+                                store movie and user data. The whole application aside from the database is containerized
+                                using Docker for easy deployment regardless of platform.
+                            </p>
+                        </div>
+                        <div class="chip-container">
+                            <span class="chip">NodeJS</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">React</span>
+                            <span class="chip">Docker</span>
+                            <span class="chip">MongoDB</span>
+                        </div>
+                    </div>
+                    <!-- Image Manipulator 3000 -->
+                    <div class="project">
+                        <img src="images/image-manipulator.png">
+                        <div class="body">
+                            <h3>Image Manipulator 3000</h3>
+                            <p>Another school project. This is a program that can open images, apply different filters
+                                to them, and save them. It supports opening and saving .jpeg and .png files as well as
+                                two custom formats .msoe, a plaintext format, and .bmsoe, a binary format. The program
+                                uses a two window JavaFX GUI for user interaction.
+                            </p>
+                        </div>
+                        <div class="chip-container">
+                            <span class="chip">Java</span>
+                            <span class="chip">JavaFX</span>
+                        </div>
+                    </div>
+                    <!-- Gantry -->
+                    <!-- Uncomment when finished -->
+                    <!-- <div class="project">
+                        <img src="images/esphome.png">
+                        <div class="body">
+                            <h3>ESPHome Plant Monitor</h3>
+                            <p>An ESPHome based plant monitor. Monitors soil moisture with a capacitive soil sensor
+                                for each plant and monitors ambient light, temperature, and humidity on the main device.
+                                All soil sensors are routed back to one central device to save on cost. The device can
+                                also talk with Home Assistant to send you notifications when your plant is low on water.
+                            </p>
+                        </div>
+                        <div class="chip-container">
+                            <span class="chip">ESPHome</span>
+                            <span class="chip">Home Assistant</span>
+                            <span class="chip">Hardware</span>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </body>
-
 </html>

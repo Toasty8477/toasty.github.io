@@ -40,6 +40,13 @@ a {
     margin-top: 3em;
 }
 
+#left-side{
+    align-self: start;
+    position: sticky;
+    top: 2em;
+    left: 0;
+}
+
 .list-of-things {
     display: flex;
     flex-direction: column;

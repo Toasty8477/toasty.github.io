@@ -1,58 +1,140 @@
 <!DOCTYPE html>
 <html>
     <head lang="en-US">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
         <title>Alex Horton</title>
+        <!-- Mobile Stuff -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Link my css -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Add fira mono from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="header">
-            <h1 class="header-text">Alex Horton</h1>
-            <a href="index.html">
-                <button class="header-button">Home</button>
-            </a>
-            <a href="projects.html">
-                <button class="header-button">Projects</button>
-            </a>
-            <a href="about.html">
-                <button class="header-button">About Me</button>
-            </a>
-        </div>
-        <div class="flex-vertical">
-            <div>
-                <p><span id="name">About Me</span></p>
-                <p id="about-text">Hey, I'm Alex! I'm currently a second year student at
-                    Milwaukee School of Engineering pursuing a bachelors in Software Engineering
-                    and expecting to graduate in 2028. When I'm not in class I serve as the
-                    Vice President of SAGA and run registration for
-                    <a href="https://concinnitycon.weebly.com/">Concinnity</a>.</p>
-            </div>
-            <div class="flex-vertical">
-                <h2>Things I've Made</h2>
-                <div class="home-grid">
-                    <a href="https://github.com/Toasty8477/school-code/tree/master/csc-1120/labs/lab-4">
-                        <button class="project-button">Image Manipulator 3000</button>
+        <div id="site-layout">
+            <div id="left-side">
+                <h1>Alex Horton</h1>
+                <h3>Student at MSOE</h3>
+                <p><a href="#about" class="navigation-link">— About</a></p>
+                <p><a href="#projects" class="navigation-link">— Projects</a></p>
+                <div id="sites">
+                    <a href="https://github.com/Toasty8477" class="icon" target="_blank" rel="noopener noreferrer">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                            <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
+                        </svg>
                     </a>
-                    <a href="https://github.com/Toasty8477/school-code/tree/master/swe-2710">
-                        <button class="project-button">WearOS Trade Worker Health Monitor</button>
-                    </a>
-                    <a href="https://github.com/Toasty8477/movie-night-voter" target="_blank">
-                        <button class="project-button">Movie Voter</button>
-                    </a>
-                    <a href="https://github.com/Toasty8477/MQTT-Remote" target="_blank">
-                        <button class="project-button">MQTT Remote</button>
-                    </a>
-                    <a href="https://github.com/Toasty8477/esphome-plant-monitor" target="_blank">
-                        <button class="project-button">ESPHome Plant Monitor</button>
-                    </a>
-                    <a href="https://github.com/Toasty8477/Hello-World" target="_blank">
-                        <button class="project-button">SSD1306 Micropython Demo</button>
+                    <a href="https://www.linkedin.com/in/alexhorton250/" class="icon" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon"">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                        </svg>
                     </a>
                 </div>
             </div>
+            <div id="right-side">
+                <div id="about">
+                    <h1>About Me</h1>
+                    <p>I'm currently a second year student at
+                    Milwaukee School of Engineering pursuing a bachelors in Software Engineering
+                    and expecting to graduate in 2028.
+                    When I'm not in class I serve as the President of SAGA and run registration for
+                    <a href="https://concinnitycon.weebly.com/">Concinnity</a>.</p></p>
+                </div>
+
+                <h1 id="projects">My Projects</h1>
+                <div class="list-of-things">
+                    <!-- Wear OS Project -->
+                    <div class="project">
+                        <img src="images/whm-screenshot.png">
+                        <div class="body">
+                            <h3>WearOS Trade Worker Health Monitor</h3>
+                            <p>Built for my Software Tools And Process class in colaboration with Milwaukee Tool.
+                                This is WearOS app for tracking worker health metrics that would eventualy agregate
+                                the readings into a manager dashboard. The code includes all finished features
+                                licensed under the Mozilla Public License 2.0.
+                            </p>
+                        </div>
+                        <div class="chip-container">
+                            <span class="chip">Kotlin</span>
+                            <span class="chip">Android</span>
+                            <span class="chip">WearOS</span>
+                            <span class="chip">Jetpack Compose</span>
+                        </div>
+                    </div>
+                    <!-- ESPHome Plant Monitor -->
+                    <div class="project">
+                        <img src="images/esphome.png">
+                        <div class="body">
+                            <h3>ESPHome Plant Monitor</h3>
+                            <p>An ESPHome based plant monitor. Monitors soil moisture with a capacitive soil sensor
+                                for each plant and monitors ambient light, temperature, and humidity on the main device.
+                                All soil sensors are routed back to one central device to save on cost. The device can
+                                also talk with Home Assistant to send you notifications when your plant is low on water.
+                            </p>
+                        </div>
+                        <div class="chip-container">
+                            <span class="chip">ESPHome</span>
+                            <span class="chip">Home Assistant</span>
+                            <span class="chip">Hardware</span>
+                        </div>
+                    </div>
+                    <!-- Box Office -->
+                    <div class="project">
+                        <img src="images/box-office.svg">
+                        <div class="body">
+                            <h3>Box Office</h3>
+                            <p>A website to suggest and vote on movies. This project is very work in progress as I have
+                                been focused mostly on school. Uses a frontend written in React to call an Express API
+                                backend that manages votes and rating. The backend interacts with a MongoDB database to
+                                store movie and user data. The whole application aside from the database is containerized
+                                using Docker for easy deployment regardless of platform.
+                            </p>
+                        </div>
+                        <div class="chip-container">
+                            <span class="chip">NodeJS</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">React</span>
+                            <span class="chip">Docker</span>
+                            <span class="chip">MongoDB</span>
+                        </div>
+                    </div>
+                    <!-- Image Manipulator 3000 -->
+                    <div class="project">
+                        <img src="images/image-manipulator.png">
+                        <div class="body">
+                            <h3>Image Manipulator 3000</h3>
+                            <p>Another school project. This is a program that can open images, apply different filters
+                                to them, and save them. It supports opening and saving .jpeg and .png files as well as
+                                two custom formats .msoe, a plaintext format, and .bmsoe, a binary format. The program
+                                uses a two window JavaFX GUI for user interaction.
+                            </p>
+                        </div>
+                        <div class="chip-container">
+                            <span class="chip">Java</span>
+                            <span class="chip">JavaFX</span>
+                        </div>
+                    </div>
+                    <!-- Gantry -->
+                    <!-- Uncomment when finished -->
+                    <!-- <div class="project">
+                        <img src="images/esphome.png">
+                        <div class="body">
+                            <h3>ESPHome Plant Monitor</h3>
+                            <p>An ESPHome based plant monitor. Monitors soil moisture with a capacitive soil sensor
+                                for each plant and monitors ambient light, temperature, and humidity on the main device.
+                                All soil sensors are routed back to one central device to save on cost. The device can
+                                also talk with Home Assistant to send you notifications when your plant is low on water.
+                            </p>
+                        </div>
+                        <div class="chip-container">
+                            <span class="chip">ESPHome</span>
+                            <span class="chip">Home Assistant</span>
+                            <span class="chip">Hardware</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
         </div>
-        <footer>Written by hand using VS Code</footer>
     </body>
 </html>
